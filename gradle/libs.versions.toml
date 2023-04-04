@@ -1,0 +1,52 @@
+[versions]
+applicationId = "com.solo4.demo"
+appVersionName = "1.0"
+appVersionCode = "1"
+
+minSdk = "26"
+targetSdk = "33"
+buildTool = "32.0.0"
+
+kotlin = "1.8.10"
+androidGradlePlugin = "7.4.1"
+core_ktx = "1.9.0"
+lifecycle_runtime_ktx = "2.6.1"
+koin = "3.4.3"
+navigation_compose = "2.5.3"
+compose_bom = "2023.01.00"
+compose-material3 = "1.1.0-beta01"
+retrofit = "2.9.0"
+gson = "2.10.1"
+coroutines = "1.7.0-Beta"
+
+[libraries]
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+
+core_ktx = { module = "androidx.core:core-ktx", version.ref = "core_ktx" }
+lifecycle_runtime_ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle_runtime_ktx" }
+
+koin_compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin_compose_navigation = { module = "io.insert-koin:koin-androidx-compose-navigation", version.ref = "koin" }
+
+navigation_compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation_compose" }
+
+compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose_bom" }
+compose-foundation = { group = "androidx.compose.foundation", name = "foundation" }
+compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout" }
+compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "compose-material3" }
+compose-material3-windowSizeClass = { group = "androidx.compose.material3", name = "material3-window-size-class", version.ref = "compose-material3" }
+compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-ui-util = { group = "androidx.compose.ui", name = "ui-util" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+retrofit-converterGson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
+
+coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
